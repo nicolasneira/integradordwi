@@ -1,0 +1,65 @@
+/* Pie de Pagina */
+footer {
+    background-color: #593520;
+    margin-top: 5%;
+    position: relative; 
+    width: 100%;
+}
+
+.pol {
+    height: 100px;
+    float: left;
+}
+
+.iconos {
+    margin-right: 5px;
+    height: 24px;
+}
+
+.info1, .info2 { 
+    display: flex;
+    position: relative;
+}
+
+.info1 {
+    margin-top: 20px;
+}
+
+.iconos {
+    color: #ffffff; 
+    font-size: 24px; 
+    margin-right: 10px; 
+    transition: color 0.3s; 
+    position: relative;
+}
+
+.iconos:hover {
+    color: #d4af37; 
+}
+.col-3:last-child {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    width: auto; 
+}
+
+/* Responsividad */
+@media screen and (max-width: 550px) {
+    #footer {
+        display: flex;           
+    justify-content: space-around; 
+    align-items: center;     
+    flex-wrap: wrap;
+}
+
+    .col-3 {
+        width: 100%; 
+        text-align: center; 
+        margin-top: 10px; 
+    }
+
+    .pol {
+        display: block;
+        margin: 0 auto; 
+    }
+}
