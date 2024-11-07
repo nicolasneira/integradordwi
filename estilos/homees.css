@@ -8,6 +8,19 @@ body{
     margin-right: 10%;
 }
 
+/*CABECERA LOGO*/
+#carouselExampleFade {
+    position: relative;
+    z-index: 5;
+}
+.navbar-brand-img {
+    width: 55em;
+    height: 55em;
+    position: absolute;
+    float: left;
+    z-index: 10;
+}
+
 /*ICONOS SERVICIOS*/
 .servis {
     width: 40%;
