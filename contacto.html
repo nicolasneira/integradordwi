@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">      
         <link rel="stylesheet" href="estilos/homees.css">
+        <link rel="stylesheet" href="estilos/carrucel.css">
         <link rel="stylesheet" href="estilos/piedepagina.css">
         <link rel="stylesheet" href="estilos/texto.css">
         <link rel="stylesheet" href="estilos/contacto.css">
@@ -19,71 +20,89 @@
   <body>
 <!--Carrusel de imagenes-->
       <!--carrusel-->
-      <header>
-        <div class="header-inner">
-          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <span class="logo">
-                  <img src="img/Logo.png" height="120" alt="">
-                </span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="novedades.html">Novedades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contactos</a>
-                  </li>
-                </ul>
+    <header>
+      <div class="header-inner">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <span class="logo">
+                <img src="img/Logo.png" height="120" alt="">
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contactos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <script>
+        // JavaScript para ocultar el navbar y el logo al scrollear hacia abajo
+          let lastScrollTop = 0;
+          const navbar = document.querySelector('.navbar');
+          const logo = document.querySelector('.navbar .logo');
+
+          window.addEventListener('scroll', () => {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop > lastScrollTop) {
+          navbar.style.top = '-80px'; 
+          logo.style.opacity = '0'; 
+          } else {
+          navbar.style.top = '0';
+          logo.style.opacity = '1';
+          }
+        lastScrollTop = scrollTop;
+        });
+      </script>
+      </div>
+        
+    
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active bg-1">
+                <img src="img/carr1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item bg-2">
+                <img src="img/carr2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item bg-3">
+                <img src="img/carr3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item bg-3">
+                <img src="img/carr4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item bg-3">
+                <img src="img/carr5.png" class="d-block w-100" alt="...">
               </div>
             </div>
-          </nav>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-          
-      
-          <div id="carouselExampleCaptions" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active bg-1">
-                  <img src="img/carr1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item bg-2">
-                  <img src="img/carr2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item bg-3">
-                  <img src="img/carr3.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item bg-3">
-                  <img src="img/carr4.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item bg-3">
-                  <img src="img/carr5.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-          </div>
-    </header>
-
+  </header>
 <div class="contato">
 
     <!--Formulario Contacto-->
