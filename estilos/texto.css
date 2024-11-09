@@ -1,68 +1,75 @@
-/* Tetos */
+/* Textos Generales */
 
-/*Tutulos*/
-.titulos{
+/* Títulos */
+.titulos {
+    margin-top:5% ;
     text-align: center;
     color: black;
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400; /* Cambiar "weight" por un valor válido */
     font-style: normal;
-    font-size:50px;
+    font-size: 50px;
 }
-/*Texto Home*/
-.texto{
+
+/* Texto Home */
+.texto {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-style: normal
+    font-style: normal;
 }
-/*texto producto*/
-.texto-producto{
+
+/* Texto Producto */
+.texto-producto {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
     font-size: 22px;
 }
-/*Texto Nosotros*/
-.nosotros-p{
+
+/* Texto Contacto */
+.accordion-body {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    color:black;
-    font-size: 22px;
+    color: black;
+    font-size: 16px;
 }
-/*Texto footer*/
-.container p{
+
+/* Texto Nosotros */
+.nosotros-p {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-style: normal; 
+    font-style: normal;
+    color: black;
+    font-size: 22px;
+}
+
+/* Texto Footer */
+.container p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     color: white;
 }
 
+/* Responsivo para Pantallas Pequeñas */
 @media screen and (max-width: 550px) {
-  /*Tutulos*/
-.titulos{
-    text-align: center;
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-size:32px;
-}
-/*Texto Nosotros*/
-.nosotros-p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    color:black;
-    font-size: 16px;
-    padding: 0 10px;
-}  
-/*Textp productos*/
-.texto-producto{
-    font-size: 16px;
+    /* Títulos */
+    .titulos {
+        font-size: 32px;
+    }
+
+    /* Texto Nosotros y Contacto */
+    .accordion-body,
+    .nosotros-p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    /* Texto Producto */
+    .texto-producto {
+        font-size: 16px;
+    }
 }

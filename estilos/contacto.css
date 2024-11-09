@@ -1,75 +1,109 @@
-/*Para ubicar Contacto y Preguntas Frecuentes en el cuerpo de la pág*/
+/* Estructura general */
 .contato {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1em; /* Espaciado entre elementos */
     margin: 2em;
-}
-/*Sirve para la estetica del recuadro y titulo de Contacto y Preguntas Frecuentes*/
-.formContacto {
-    width: 50%;
+  }
+  
+  /* Comentarios */
+  .comment-content {
+    border-radius: 10px;
+    margin: 5%;
+    background-color: #A68365;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+  }
+  
+  /* Agregar scroll si hay muchos comentarios */
+  .comment-container {
+    max-height: 300px; /* Altura máxima */
+    overflow-y: auto; /* Scroll vertical */
+  }
+  
+  /* Formulario */
+  .formContacto {
+    width: 43%;
     height: auto;
     background-color: #D9C2A7;
     border-radius: 2em;
     margin: 2em;
-}
-.titulo-cont {
+  }
+  .formContacto form{
+    margin: 5%;
+  }
+  
+  .titulo-cont {
     background-color: #593520;
-    width: auto;
-    height: 3em;
+    padding: 0.5em;
     border-radius: 2em 2em 0 0;
-}
-.titulo-cont h5 {
-    font-family: "Monserat";
     text-align: center;
+  }
+  
+  .titulo-cont h5 {
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: bold;
-    padding: 0.5em;
     font-size: 1.5em;
-}
-
-/*Contacto*/
-.formContacto form {
-    padding: 1.5em 3.5em;
-}
-.form-control {
+  }
+  
+  .form-control {
     background-color: #A68365;
     border-color: #A68365;
     border-radius: 2em;
-}
-#mensaje {
-    height: 7.5em;
-}
-.btn {
+    color: #fff; 
+  }
+  
+  #mensaje {
+    height: 100px;
+    
+  }
+  
+  /*Preguntas*/
+  .accordion{
+    margin: 5%;
+  }
+  .accordion-button{
+    background-color: #A68365;
+    color: white;
+  }
+  .accordion-button:hover{
+    background-color: #F2E4DC;
+    color: black;
+  }
+  
+  
+  .btn {
     background-color: #A68365;
     border-radius: 2em;
-    margin-top: 1em;
-    margin-left: 24.5em;
-}
-
-/*Preguntas Frecuentes*/
-.preguntas {
-    padding: 1.5em 3.5em;
-}
-.preguntas h6 {
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 1.2em;
-}
-.preguntas p {
-    font-family: "Roboto";
-}
-/*Agregar barra de scroll*/
-.contenedor-preguntas {
-    overflow-y: scroll;
-    padding-right: 3em;
-}
-/*
-.contenedor-preguntas::-webkit-scrollbar {
-    width: 1em;
-    background-color: #D9D9D9;
-    border-radius: 2em;
-}
-.contenedor-preguntas::-webkit-scrollbar-thumb {
-    background-color: #8C877D;
-    border-radius: 2em;
-}
-*/
+    margin: 1em 0; 
+    margin-left: auto; 
+    display: block;
+  }
+  .btn:hover{
+    background-color:#593520 ;
+    color: white;
+  }
+  
+  /* Pantallas pequeñas */
+  @media screen and (max-width: 550px) {
+    .contato {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .formContacto {
+      width: 90%; 
+    }
+  
+    .btn {
+      margin: 1em 0; 
+      margin-left: auto; 
+      display: block; 
+    }
+  }
+  

@@ -1,0 +1,68 @@
+/*logo*/
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+   
+}
+
+/*menu principal*/
+.navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover{
+    color: rgb(255, 206, 107);
+}
+
+/*scroll*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: top 0.3s ease; 
+  }
+  .navbar .logo {
+    height: 90px;
+    transition: opacity 0.3s ease;
+  }
+
+.navbar-scroll{
+    background-color: #8C877D;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0px 1px 10px rgba(0, 0,0, 0.4);
+    transition-duration: 0.6s;
+}
+
+.navbar-scroll {
+    background-color: #8C877D;
+    padding: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.6s;
+}
+
+.navbar-scroll .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-scroll .logo {
+    height: 90;
+}
+
+/*carousel*/
+.bg-1, .bg-2, .bg-3{
+    background-size: cover;
+}
+
+/*section*/
+
+section{
+    height: 400px;
+}
+

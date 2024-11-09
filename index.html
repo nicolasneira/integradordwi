@@ -1,15 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-    <!--carrusel-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mueblex</title>
+        <link rel="icon" href="img/Logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="estilos/homees.css">
+        <link rel="stylesheet" href="estilos/texto.css">
+        <link rel="stylesheet" href="estilos/piedepagina.css">
+        <link rel="stylesheet" href="estilos/contacto.css">
+        <link rel="stylesheet" href="estilos/card.css">
+        <link rel="stylesheet" href="estilos/carrucel.css">
+        
+    </head>
+  <body>
+      <!--Carrusel de imagenes-->
+      <!--carrusel-->
     <header>
       <div class="header-inner">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -25,37 +36,62 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Productos</a>
+                  <a class="nav-link" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Novedades</a>
+                  <a class="nav-link" href="novedades.html">Novedades</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contactos</a>
+                  <a class="nav-link" href="contacto.html">Contactos</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+        <script>
+        // JavaScript para ocultar el navbar y el logo al scrollear hacia abajo
+          let lastScrollTop = 0;
+          const navbar = document.querySelector('.navbar');
+          const logo = document.querySelector('.navbar .logo');
+
+          window.addEventListener('scroll', () => {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop > lastScrollTop) {
+          navbar.style.top = '-80px'; 
+          logo.style.opacity = '0'; 
+          } else {
+          navbar.style.top = '0';
+          logo.style.opacity = '1';
+          }
+        lastScrollTop = scrollTop;
+        });
+      </script>
       </div>
         
     
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active bg-1">
-                <img src="img/carru1.png" class="d-block w-100" alt="...">
+                <img src="img/carr1.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item bg-2">
-                <img src="img/carru2.png" class="d-block w-100" alt="...">
+                <img src="img/carr2.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item bg-3">
-                <img src="img/carru3.png" class="d-block w-100" alt="...">
+                <img src="img/carr3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item bg-3">
+                <img src="img/carr4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item bg-3">
+                <img src="img/carr5.png" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -67,62 +103,341 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </header>
+  </header>
     
-    <!--formularios-->
-    <section>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima, quasi laborum, delectus expedita, dolor ducimus exercitationem minus ipsam debitis earum quis sapiente culpa omnis? Delectus exercitationem magnam autem nobis!</p>
-    </section>
-
-    <!--footer-->
-    <footer>
-        <div class="container">
-            <div class="row" id="footer">
-                <div class="col-3">
-                    <img src="img/Logo.png" class="pol" alt="logo_muebles">
+   
+<div class="margenes">
+<!--texto con hipervinculo a nosotros -->
+<div class="texto_titulo">
+  <h1 class="titulos">Mueblex</h1>
+</div>
+<div class="texto_in"> 
+  <p class="nosotros-p">
+    Desde sus inicios en la hermosa provincia de San Juan, Argentina, Mublex ha sido más que una mueblería; 
+    es un proyecto familiar fundado con pasión y dedicación hacia el arte de crear espacios. Con más de 20 años de trayectoria, 
+    Mublex nació del sueño de ofrecer a las familias de San Juan muebles de calidad, diseñados y fabricados con un profundo respeto
+     por los materiales y por las necesidades de nuestros clientes <a href="nosotros.html" style="color:#593520 ;">leer mas</a>
+  </p>
+</div>
+</div>
+<div>
+<img src="img/home.png" class="img-fluid" alt="imagen_home">
+</div> 
+<div class="margenes">
+ <!--Seccion Productos-->
+ <div class="texto_titulo">
+  <h1 class="titulos">Productos</h1>
+</div>
+</div>
+<!-- Carrusel de Cards Productos -->
+  <!-- Carrusel principal (pantallas grandes) -->
+  <div id="carouselProducts" class="carousel slide carousel-fade" style="margin-bottom:10% ;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-cont">
+          <div class="container text-center">
+              <div class="row">
+                  <div class="col order-last">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/card_cocina.png" class="card-img-top" alt="Cocina">
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">COCINA</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/card_sala.png" class="card-img-top" alt="Sala">
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">SALA</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col order-first">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/card_comedor.png" class="card-img-top" alt="Comedor">
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">COMEDOR</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-cont">
+          <div class="container text-center">
+              <div class="row">
+                  <div class="col order-last">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/card_jardin.png" class="card-img-top" alt="Jardín y Exteriores">
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">JARDÍN Y EXTERIORES</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/card_baño.png" class="card-img-top" alt="Baño">
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">BAÑO</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col order-first">
+                      <div class="card" style="width: 18rem;">
+                          <img src="img/card_dormitorio.png" class="card-img-top" alt="Dormitorio">
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">DORMITORIO</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducts" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProducts" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Carrusel alternativo (pantallas pequeñas) -->
+  <div id="carouselSmall" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="img/card_cocina.png" class="card-img-top" alt="Cocina">
+                  <div class="card-body">
+                      <a href="#" class="btn btn-primary">COCINA</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/card_sala.png" class="card-img-top" alt="Sala">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">SALA</a>
                 </div>
-                <div class="col-3">
-                    <p class="info1">
-                        <i class="fas fa-envelope iconos"></i> mueblex_sj@gmail.com
-                    </p>
-                    <p class="info2">
-                        <i class="fas fa-map-marker-alt iconos"></i> Mendoza 666 S San Juan
-                    </p>
-                </div>
-                <div class="col-3">
-                    <p class="info1">
-                        <i class="fas fa-phone iconos"></i> 2646251810
-                    </p>
-                    <p class="info2">
-                        <i class="fas fa-phone iconos"></i> 2645781752
-                    </p>
-                </div>
-                <div class="col-3">
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook iconos"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram iconos"></i>
-                    </a>
-                    <a href="https://web.whatsapp.com" target="_blank" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp iconos"></i>
-                    </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/card_comedor.png" class="card-img-top" alt="Comedor">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">COMEDOR</a>
                 </div>
             </div>
         </div>
-      </footer>
-      <script type="text/javascript">
-        $(function(){
-          var navbar = $('header-inner');
-          $(window).scroll(function(){
-            if($(window).scrollTop() <= 40){
-              navbar.removeClass('navbar-scroll');
-            }else{
-              navbar.addClass('navbar-scroll');
-            }
-          });
-        });
-      </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/card_jardin.png" class="card-img-top" alt="Jardín y Exteriores">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">JARDÍN Y EXTERIORES</a>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/card_baño.png" class="card-img-top" alt="Baño">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">BAÑO</a>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/card_dormitorio.png" class="card-img-top" alt="Dormitorio">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">DORMITORIO</a>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmall" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSmall" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+ <!--servicios-->
+ <div class="margenes">
+ <div class="texto_titulo">
+  <h1 class="titulos">Servicios</h1>
+</div>
+</div>
+
+<!--servicios_ iconos-->
+<div class="margenes"></div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4" id="serv">
+      <img src="img/camion-de-reparto.png" class="servis" alt="camion">
+      <p>Envíos a Todo el País</p>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4" id="serv">
+      <img src="img/intenta-cuadrado.png" class="servis" alt="escuadra">
+      <p>Diseños a Medida</p>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4" id="serv">
+      <img src="img/centro-de-llamadas.png" class="servis" alt="atencion">
+      <p>Consultas <br>Lunes a Sábado<br>09:00 a 20:00</p>
+    </div>
+  </div>
+</div>
+</div>
+<!--Reseñas-->
+<div class="margenes">
+  <!--Seccion Productos-->
+  <div class="texto_titulo">
+   <h1 class="titulos">Reseñas</h1>
+ </div>
+ </div>
+
+ <div class="contato">
+  <!-- Comentarios -->
+  <div class="formContacto">
+    <div class="titulo-cont">
+      <h5>Comentarios</h5>
+    </div>
+    <div class="comment-container">
+      <div class="comment-content">
+  <strong>Juan Pérez:</strong> "Estoy muy satisfecho con mi compra, los muebles son de excelente calidad y llegaron a tiempo. ¡Definitivamente volveré a comprar aquí!"
+</div>
+<div class="comment-content">
+  <strong>Ana Gómez:</strong> "¡Me encanta el sofá que compré! Es cómodo, elegante y el servicio al cliente fue muy amable. ¡Lo recomiendo!"
+</div>
+<div class="comment-content">
+  <strong>Carlos Rodríguez:</strong> "El diseño de los muebles es moderno y se adapta perfectamente a mi sala. ¡Un trabajo excelente! Muy contento con la compra."
+</div>
+<div class="comment-content">
+  <strong>María López:</strong> "Compré una mesa de comedor y es aún más bonita en persona. La calidad es increíble, se nota que son productos bien hechos. ¡Muy feliz!"
+</div>
+<div class="comment-content">
+  <strong>David Fernández:</strong> "El servicio fue rápido y los muebles llegaron sin daños. ¡Todo fue perfecto! Estoy encantado con el resultado."
+</div>
+    </div>
+  </div>
+
+  <!-- Deje su comentario -->
+  <div class="formContacto">
+    <div class="titulo-cont">
+      <h5>Deje su comentario</h5>
+    </div>
+    <form id="formComentario">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Detalle su Experiencia:</label>
+        <input type="text" class="form-control" id="mensaje">
+      </div>
+      <div class="mb-3">
+        <!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Enviar
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¡Gracias por su comentario!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Su reseña fue enviada con éxito. ¡Gracias por compartir su experiencia con nosotros!</p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </form>
+  </div>
+
+  
+    
+</div>
+
+
+<!-- Pie de página -->
+<footer>
+  <div class="container">
+      <div class="row" id="footer">
+          <div class="col-3">
+              <img src="img/logob.png" class="pol" alt="logo_muebles">
+          </div>
+          <div class="col-3">
+              <p class="info1">
+                  <i class="fas fa-envelope iconos"></i> mueblex_sj@gmail.com
+              </p>
+              <p class="info2">
+                  <i class="fas fa-map-marker-alt iconos"></i> Mendoza 666 S San Juan
+              </p>
+          </div>
+          <div class="col-3">
+              <p class="info1">
+                  <i class="fas fa-phone iconos"></i> 2646251810
+              </p>
+              <p class="info2">
+                  <i class="fas fa-phone iconos"></i> 2645781752
+              </p>
+          </div>
+          <div class="col-3">
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                  <i class="fab fa-facebook iconos"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram iconos"></i>
+              </a>
+              <a href="https://web.whatsapp.com" target="_blank" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp iconos"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

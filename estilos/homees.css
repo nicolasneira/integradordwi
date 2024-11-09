@@ -1,25 +1,11 @@
 body{
     background-color: #F2E4DC;
 }
-
 .margenes{
-    margin-top: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-/*CABECERA LOGO*/
-#carouselExampleFade {
-    position: relative;
-    z-index: 5;
-}
-.navbar-brand-img {
-    width: 55em;
-    height: 55em;
-    position: absolute;
-    float: left;
-    z-index: 10;
-}
 
 /*ICONOS SERVICIOS*/
 .servis {
@@ -40,3 +26,25 @@ body{
         margin-right: 5%;
     }
 }
+
+/* Carrusel principal (para pantallas grandes) */
+#carouselProducts {
+    display: block;
+  }
+  
+  #carouselSmall {
+    display: none;
+  }
+  
+  /* Carrusel alternativo (para pantallas pequeñas) */
+  @media (max-width: 550px) {
+    #carouselProducts {
+      display: none; /* Oculta el carrusel principal */
+    }
+  
+    #carouselSmall {
+      display: block; /* Muestra el carrusel alternativo */
+    }
+  }
+  
+
