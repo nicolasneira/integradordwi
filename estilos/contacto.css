@@ -1,0 +1,75 @@
+/*Para ubicar Contacto y Preguntas Frecuentes en el cuerpo de la pág*/
+.contato {
+    display: flex;
+    margin: 2em;
+}
+/*Sirve para la estetica del recuadro y titulo de Contacto y Preguntas Frecuentes*/
+.formContacto {
+    width: 50%;
+    height: auto;
+    background-color: #D9C2A7;
+    border-radius: 2em;
+    margin: 2em;
+}
+.titulo-cont {
+    background-color: #593520;
+    width: auto;
+    height: 3em;
+    border-radius: 2em 2em 0 0;
+}
+.titulo-cont h5 {
+    font-family: "Monserat";
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+/*Contacto*/
+.formContacto form {
+    padding: 1.5em 3.5em;
+}
+.form-control {
+    background-color: #A68365;
+    border-color: #A68365;
+    border-radius: 2em;
+}
+#mensaje {
+    height: 7.5em;
+}
+.btn {
+    background-color: #A68365;
+    border-radius: 2em;
+    margin-top: 1em;
+    margin-left: 24.5em;
+}
+
+/*Preguntas Frecuentes*/
+.preguntas {
+    padding: 1.5em 3.5em;
+}
+.preguntas h6 {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.preguntas p {
+    font-family: "Roboto";
+}
+/*Agregar barra de scroll*/
+.contenedor-preguntas {
+    overflow-y: scroll;
+    padding-right: 3em;
+}
+/*
+.contenedor-preguntas::-webkit-scrollbar {
+    width: 1em;
+    background-color: #D9D9D9;
+    border-radius: 2em;
+}
+.contenedor-preguntas::-webkit-scrollbar-thumb {
+    background-color: #8C877D;
+    border-radius: 2em;
+}
+*/
