@@ -35,16 +35,28 @@ body{
   #carouselSmall {
     display: none;
   }
+ #carouselSmall2 {
+    display: none;
+  }
   
   /* Carrusel alternativo (para pantallas pequeñas) */
   @media (max-width: 550px) {
     #carouselProducts {
       display: none; 
     }
+      #carouselExampleControls {
+        display: none;
+    }
+    #carouselExampleControls2 {
+        display: none;
+    }
   
     #carouselSmall {
       display: block; 
     }
+      #carouselSmall2 {
+        display: block; 
+      }
   }
   
 
