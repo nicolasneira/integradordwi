@@ -11,6 +11,10 @@ footer {
     float: left;
 }
 
+.enlace-red {
+    text-decoration: none;
+}
+
 .iconos {
     margin-right: 5px;
     height: 24px;
