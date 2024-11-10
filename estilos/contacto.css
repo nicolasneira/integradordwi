@@ -96,7 +96,7 @@
   /* Pantallas pequeñas */
   @media screen and (max-width: 550px) {
     .formContacto {
-      width: 90%; 
+      width: 95%; 
     }
   
     .btn {
