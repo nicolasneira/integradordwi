@@ -66,3 +66,38 @@ section{
     height: 400px;
 }
 
+/* Pantallas pequeñas */
+@media screen and (max-width: 550px) {
+
+    .navbar {
+      padding: 10px 15px;
+      top: 0;
+      position: fixed;
+      width: 100%;
+    }
+    
+    .navbar .logo img {
+      height: 60px; 
+      transition: opacity 0.3s ease;
+    }
+  
+   
+    .navbar-nav .nav-link {
+      font-size: 12px; 
+      padding: 5px 10px; 
+    }
+  
+    
+    .navbar-toggler {
+      padding: 5px;
+      font-size: 1rem;
+    }
+    .navbar-collapse {
+        display: flex; 
+        justify-content: flex-end; 
+        text-align: right; 
+        background-color: rgba(0, 0, 0, 0.7); 
+        padding: 10px;
+        border-radius: 8px; 
+    }
+  }

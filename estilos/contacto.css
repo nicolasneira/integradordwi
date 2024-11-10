@@ -75,6 +75,10 @@
     background-color: #F2E4DC;
     color: black;
   }
+  .accordion-button:not(.collapsed) {
+    background-color: #F2E4DC; /* Marrón oscuro */
+    color: black;
+}
   
   
   .btn {

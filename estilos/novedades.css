@@ -44,6 +44,10 @@
     background-color: #D9C2A7;
     overflow-x: scroll;
 }
+/*
+.card-noticias::-webkit-scrollbar {
+    width: 0;
+}*/
 .card-body {
     background-color: #A68365;
     border-radius: 2em;
@@ -57,4 +61,6 @@
 .card-text-noti {
     font-family: "Roboto";
     color: white;
+    border-left: #593520 solid;
+    padding-left: 0.5em;
 }
