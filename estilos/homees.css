@@ -39,11 +39,11 @@ body{
   /* Carrusel alternativo (para pantallas pequeñas) */
   @media (max-width: 550px) {
     #carouselProducts {
-      display: none; /* Oculta el carrusel principal */
+      display: none; 
     }
   
     #carouselSmall {
-      display: block; /* Muestra el carrusel alternativo */
+      display: block; 
     }
   }
   
